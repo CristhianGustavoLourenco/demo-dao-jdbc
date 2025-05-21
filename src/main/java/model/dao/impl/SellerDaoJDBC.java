@@ -56,7 +56,7 @@ public class SellerDaoJDBC implements SellerDao {
                 }
                 DB.closeResultSet(rs);
             }else{
-                throw new DbException("Unexpected error! No rows affected!");
+                    throw new DbException("Unexpected error! No rows affected!");
             }
         }catch(SQLException e){
             throw  new DbException(e.getMessage());
@@ -91,7 +91,7 @@ public class SellerDaoJDBC implements SellerDao {
     }
 
     @Override
-    public void deleteDyId(Integer id) {
+    public void deleteById(Integer id) {
         PreparedStatement st = null;
         
         try{

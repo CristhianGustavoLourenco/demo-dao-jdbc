@@ -17,7 +17,7 @@ import model.entities.Seller;
  *
  * @author crist
  */
-public class DemoDaoJdbc {
+public class DemoDaoJdbcSeller {
 
     public static void main(String[] args) {
         
@@ -55,7 +55,7 @@ public class DemoDaoJdbc {
         System.out.println("\n === TEST 6: Seller Delete");
         System.out.println("Enter id for delete test: ");
         int id = scan.nextInt();
-        sellerDao.deleteDyId(id);
+        sellerDao.deleteById(id);
         System.out.println("Seller of Id: " + id + " Deleted Complete");
         
     }
